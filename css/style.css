@@ -15,25 +15,122 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 */
 
 /* VARIÁVEIS */
+
+body, header, figure, img, figcaption, div, section, ul, li, button, footer {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
 :root{
-  
+  --fonte-padrao: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  --cor-fundo: #141414;
+  --largura-box-usuario: 186px;
+  --secundary-color: rgb(184, 176, 176);
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--cor-fundo);
+		margin-left: 30px;
+		margin-top:10px;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		width:75px;
+		height:60px;
 	}
 
 /*RODAPÉ*/
 	
+button {
+	text-transform: uppercase;
+	padding: 7px;
+	width: 180px;
+	border: 0.5px solid rgb(184, 176, 176);
+	background-color: var(--cor-fundo);
+	color: var(--secundary-color);
+	cursor: pointer;
+	margin-top: 35px;
+}
+
+button:hover {
+	border-color: white;
+}
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		width: 858px;
+		margin: 0 auto;
 	}
+
+	section > header {
+		color: #fff;
+		font-family: var(--fonte-padrao);
+		font-size: 15px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;	
+		text-align: center;
+	}
+
+	figcaption {
+		display: none;
+	}
+
+
+	li > figure > img:hover {
+		cursor: pointer;
+	}
+
+	li > figure {
+		width: var(--largura-box-usuario);
+	}
+
+	li > figure > img {
+		width: 100%;
+	}
+
+
+	.addPerfil > figure > img {
+		width: 90px;
+	}
+
+	h3 {
+		text-align: center;
+		color: rgb(184, 176, 176);
+		font-weight: 400;
+		font-family: var(--fonte-padrao);
+	}
+
+	section {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;	
+	}
+
+	@media (min-width: 768px) {
+		ul {
+			flex-direction: row;
+			justify-content: space-between;
+			width: 100%;
+		}
+		section {
+			flex-direction:row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		section > header {
+			font-size: 25px;
+		}
+
+		.addPerfil {
+		margin-top: 60px;
+		text-align: center;
+		} 
+	}
+
 
