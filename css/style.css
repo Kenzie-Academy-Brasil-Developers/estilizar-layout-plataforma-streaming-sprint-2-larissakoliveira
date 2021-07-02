@@ -72,9 +72,11 @@ button:hover {
 
 	ul {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		list-style: none;	
 		text-align: center;
+		justify-content: center;
 	}
 
 	figcaption {
@@ -88,7 +90,8 @@ button:hover {
 
 	li > figure {
 		width: var(--largura-box-usuario);
-		height:186px;	
+		height:186px;
+		margin-right: 25px;
 		}
 
 	li > figure > img {
