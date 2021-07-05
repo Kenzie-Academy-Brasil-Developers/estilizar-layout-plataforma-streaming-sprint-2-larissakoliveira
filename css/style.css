@@ -31,7 +31,6 @@ body, header, figure, img, figcaption, div, section, ul, li, button, footer {
 /*BODY*/
 	body{
 		background-color: var(--cor-fundo);
-		margin-left: 30px;
 		margin-top:10px;
 	}
 
@@ -59,10 +58,7 @@ button:hover {
 }
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		width: 858px;
-		margin: 0 auto;
-	}
+
 
 	section > header {
 		color: #fff;
@@ -108,14 +104,14 @@ button:hover {
 		color: rgb(184, 176, 176);
 		font-weight: 400;
 		font-family: var(--fonte-padrao);
+		margin-right: 20px;
 	}
 
 	section {
 		display: flex;
 		align-items: center;
 		flex-direction: column;	
-		width: 80vw;
-		
+	
 	}
 
 	@media (min-width: 768px) {
@@ -136,6 +132,11 @@ button:hover {
 		section {
 			align-items: flex-start;
 			width: 100%;
+		}
+
+		div.pg-home{
+			width: 858px;
+			margin: 0 auto;
 		}
 	}
 
